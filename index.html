@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="theme-color" content="blue">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" type="text/css" rel="stylesheet" />
+        <link href="manifest.json" rel="manifest">
+        
+        
+        <title>Calculator</title>
+    </head>
+    <body onload="Greet()">
+        <div class="container">
+            <div>
+                <div id="ans"></div>
+                
+                <input type="text" id="val1" autocomplete="off" />
+                <select id="operation">
+                    <option>--Select--</option>
+                    <option>+</option>
+                    <option>-</option>
+                    <option>x</option>
+                    <option>/</option>
+                </select>
+                <input type="text" id="val2" autocomplete="off" />
+                <br />
+                <button id="calc" onClick="Calculate()">Calculate!</button>
+                
+                <br />
+                
+            </div>
+        </div>
+        <script src="main.js" defer></script>
+        <script src="jquery.js" defer></script>
+    </body>
+</html>
